@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      {{ machine.name }}
+      <div class="col-sm-6 offset-sm-3">
+        <button class="btn btn-info btn-block" (click)="showDetails(machine)" style="cursor: pointer">Details</button>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="machineDetails">
+    <div class="col-sm-8 offset-sm-2">
+      <div class="col-sm-12"><span><b>ID:</b> {{ machineDetails.machineId }} </span></div>
+      <div class="col-sm-12"><span><b>Category:</b> {{ machineDetails.category }} </span></div>
+      <div class="col-sm-12"><span><b>Name:</b> {{ machineDetails.name }} </span></div>
+      <div class="col-sm-12"><span><b>Description:</b> {{ machineDetails.description }} </span></div>
+      <div class="col-sm-12"><span><b>Last Action</b></span></div>
+      <div class="col-sm-11 offset-sm-1"><span><b>Date:</b> {{ machineDetails.lastAction.date | date : 'medium' }} </span></div>
+      <div class="col-sm-11 offset-sm-1"><span><b>Type:</b> {{ machineDetails.lastAction.type }} </span></div>
+      <div class="col-sm-11 offset-sm-1"><span><b>Description:</b> {{ machineDetails.lastAction.description }} </span></div>
+      <div class="col-sm-12"><span><b>Next Action</b></span></div>
+      <div class="col-sm-11 offset-sm-1"><span><b>Date:</b> {{ machineDetails.nextAction.date | date : 'medium' }} </span></div>
+      <div class="col-sm-11 offset-sm-1"><span><b>Type:</b> {{ machineDetails.nextAction.type }} </span></div>
+      <div class="col-sm-11 offset-sm-1"><span><b>Description:</b> {{ machineDetails.nextAction.description }} </span></div>
+      <div class="col-sm-6 offset-sm-3"><button class="btn btn-info btn-block">Next Action</button></div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* By tagName */
+/* ---------- */
+
+body{
+  background-color: #000666;
+  color: white;
+  font-size: 90%;
+}
+
+button{
+  font-size: 75%;
+  margin: 5px 0px;
+}
+
+a{
+  color: white;
+}
+
+/* By class */
+/* -------- */
+
+.container{
+  margin: 20px 0px;
+}
+
+.navbar{
+  background-color: #000633;
+  color: white;
+}
+
+/* By id */
+/* ----- */
+

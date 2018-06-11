@@ -1,0 +1,74 @@
+    {
+      "id": 1,
+      "name": "hall3",
+      "area": "48m2",
+      "height": 8,
+      "width": 6,
+      "numberOfMachines": 4,
+      "machines": [
+        {
+          "machineId": "PA0013",
+          "category": "machine",
+          "name": "packing machine",
+          "description": "to press the forms in the sheets",
+          "lastAction": {
+            "date": "2017-07-20T08:15:00",
+            "type": "repair",
+            "description": "to fix driving gear"
+          },
+          "nextAction": {
+            "date": "2017-07-20T11:00:00",
+            "type": "check-up",
+            "description": "to check if fixed driving gear holds"
+          }
+        },
+        {
+          "machineId": "CO089",
+          "category": "machine",
+          "name": "container",
+          "description": "to collect the waste of the cut sheets",
+          "lastAction": {
+            "date": "2017-07-14T18:00:00",
+            "type": "check-up",
+            "description": "to check if the container has to be emptied"
+          },
+          "nextAction": {
+            "date": "2017-07-20T11:00:00",
+            "type": "repair",
+            "description": "to close a small hole in one of the sides of the container"
+          }
+        },
+        {
+          "machineId": "LI028",
+          "category": "lighting",
+          "name": "lamp",
+          "description": "big light to light up the room",
+          "lastAction": {
+            "date": "2017-07-17T10:20:00",
+            "type": "check-up",
+            "description": "general check-up"
+          },
+          "nextAction": {
+            "date": "2017-07-17T13:00:00",
+            "type": "check-up",
+            "description": "to check the electrical wiring"
+          }
+        },
+        {
+          "machineId": "CB047",
+          "category": "conveyor_belt",
+          "name": "conveyor belt",
+          "description": "to transport the waste to the container",
+          "lastAction": {
+            "date": "2017-07-21T10:45:00",
+            "type": "check-up",
+            "description": "weekly check-up of the rolling elements and the belt"
+          },
+          "nextAction": {
+            "date": "2017-07-17T11:30:00",
+            "type": "check-up",
+            "description": "weekly general check-up"
+          }
+        }
+      ]
+    }

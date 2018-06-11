@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4"><span><b>Name:</b> {{ hall.name }} </span>
+      <div class="row">
+        <div class="col-sm-12">
+          <button class="btn btn-info btn-block" (click)="showDetails(hall)" style="cursor: pointer">Details</button>
+          <button class="btn btn-danger btn-block">Emergency</button>
+        </div>
+      </div>
+      <div class="row" *ngIf="hallDetails">
+        <div class="col-sm-12">
+          <div class="col-sm-12"><span><b>Area:</b> {{ hallDetails.area }} </span></div>
+          <div class="col-sm-12"><span><b>Number of machines:</b> {{ hallDetails.numberOfMachines }} </span></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8" *ngIf="hallDetails">
+      <app-machine *ngFor="let machineEl of hall.machines"
+                   [machine]="machineEl">
+      </app-machine>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+    {
+      "id": 1,
+      "name": "hall1",
+      "area": "24m2",
+      "height": 4,
+      "width": 6,
+      "numberOfMachines": 3,
+      "machines": [
+        {
+          "machineId": "OV001",
+          "category": "machine",
+          "name": "oven",
+          "description": "to bake the metal sheets",
+          "lastAction": {
+            "date": "2017-07-13T14:30:00",
+            "type": "check-up",
+            "description": "general check-up of the heating elements"
+          },
+          "nextAction": {
+            "date": "2017-07-14T07:30:00",
+            "type": "repair",
+            "description": "to fix one of the heating elements"
+          }
+        },
+        {
+          "machineId": "LI001",
+          "category": "lighting",
+          "name": "lamp",
+          "description": "to light up the room",
+          "lastAction": {
+            "date": "2017-07-13T14:30:00",
+            "type": "check-up",
+            "description": "general check-up of the light bulb"
+          },
+          "nextAction": {
+            "date": "2017-07-17T07:30:00",
+            "type": "check-up",
+            "description": "general check-up of the electrical wiring"
+          }
+        },
+        {
+          "machineId": "CB001",
+          "category": "conveyor_belt",
+          "name": "conveyor belt",
+          "description": "to transport the freshly baked metal sheets to the next hall",
+          "lastAction": {
+            "date": "2017-07-10T11:10:00",
+            "type": "check-up",
+            "description": "general check-up of the rolling elements and the belt"
+          },
+          "nextAction": {
+            "date": "2017-07-10T13:00:00",
+            "type": "repair",
+            "description": "to fix the ripped belt"
+          }
+        }
+      ]
+    }

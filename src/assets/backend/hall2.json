@@ -1,0 +1,90 @@
+    {
+      "id": 2,
+      "name": "hall2",
+      "area": "96m2",
+      "height": 8,
+      "width": 12,
+      "numberOfMachines": 5,
+      "machines": [
+        {
+          "machineId": "PR007",
+          "category": "machine",
+          "name": "press",
+          "description": "to press the forms in the sheets",
+          "lastAction": {
+            "date": "2017-07-20T08:15:00",
+            "type": "repair",
+            "description": "to fix driving gear"
+          },
+          "nextAction": {
+            "date": "2017-07-20T11:00:00",
+            "type": "check-up",
+            "description": "to check if fixed driving gear holds"
+          }
+        },
+        {
+          "machineId": "TR069",
+          "category": "machine",
+          "name": "trimming machine",
+          "description": "to cut the forms out of the baked sheets",
+          "lastAction": {
+            "date": "2017-07-17T10:20:00",
+            "type": "check-up",
+            "description": "general check-up"
+          },
+          "nextAction": {
+            "date": "2017-07-17T13:00:00",
+            "type": "check-up",
+            "description": "to check the cutting wires"
+          }
+        },
+        {
+          "machineId": "LI901",
+          "category": "lighting",
+          "name": "lamp",
+          "description": "to light up the room",
+          "lastAction": {
+            "date": "2017-07-14T18:00:00",
+            "type": "check-up",
+            "description": "general check-up of the light bulb"
+          },
+          "nextAction": {
+            "date": "2017-07-14T18:05:00",
+            "type": "check-up",
+            "description": "general check-up of the electrical wiring"
+          }
+        },
+        {
+          "machineId": "LI078",
+          "category": "lighting",
+          "name": "lamp",
+          "description": "to light up the room",
+          "lastAction": {
+            "date": "2017-07-13T15:40:00",
+            "type": "repair",
+            "description": "change the light bulb"
+          },
+          "nextAction": {
+            "date": "2017-07-17T07:30:00",
+            "type": "check-up",
+            "description": "general check-up of the electrical wiring"
+          }
+        },
+        {
+          "machineId": "CB017",
+          "category": "conveyor_belt",
+          "name": "conveyor belt",
+          "description": "to transport the pressed and cut metal sheets to the next hall for packing",
+          "lastAction": {
+            "date": "2017-07-10T11:30:00",
+            "type": "check-up",
+            "description": "weekly check-up of the rolling elements and the belt"
+          },
+          "nextAction": {
+            "date": "2017-07-17T11:30:00",
+            "type": "check-up",
+            "description": "weekly general check-up"
+          }
+        }
+      ]
+    }
